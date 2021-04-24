@@ -2,8 +2,9 @@
 
 # Initial Setup
 
-npm install @angular/
-npm install --save-dev @angular-devkit/build-angular
+npm install
+
+Use above command to install node modules.
 
 
 # Development Server
