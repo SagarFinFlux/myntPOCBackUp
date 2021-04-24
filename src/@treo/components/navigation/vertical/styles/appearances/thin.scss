@@ -1,0 +1,97 @@
+/* Variables */
+$treo-vertical-navigation-thin-width: 80;
+
+treo-vertical-navigation {
+
+    /* Thin appearance overrides */
+    &.treo-vertical-navigation-appearance-thin {
+        width: #{$treo-vertical-navigation-thin-width}px;
+        min-width: #{$treo-vertical-navigation-thin-width}px;
+        max-width: #{$treo-vertical-navigation-thin-width}px;
+
+        /* Left positioned */
+        &.treo-vertical-navigation-position-left {
+
+            &.treo-vertical-navigation-mode-side {
+                margin-left: -#{$treo-vertical-navigation-thin-width}px;
+            }
+
+            &.treo-vertical-navigation-opened {
+                margin-left: 0;
+            }
+        }
+
+        /* Right positioned */
+        &.treo-vertical-navigation-position-right {
+
+            &.treo-vertical-navigation-mode-side {
+                margin-right: -#{$treo-vertical-navigation-thin-width}px;
+            }
+
+            &.treo-vertical-navigation-opened {
+                margin-right: 0;
+            }
+
+            .treo-vertical-navigation-aside-wrapper {
+                left: auto;
+                right: #{$treo-vertical-navigation-thin-width}px;
+            }
+        }
+
+        /* Wrapper */
+        .treo-vertical-navigation-wrapper {
+
+            /* Content */
+            .treo-vertical-navigation-content {
+
+                > treo-vertical-navigation-aside-item,
+                > treo-vertical-navigation-basic-item {
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 64px;
+                    min-height: 64px;
+                    max-height: 64px;
+                    padding: 0 16px;
+
+                    .treo-vertical-navigation-item-wrapper {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .treo-vertical-navigation-item {
+                            justify-content: center;
+                            padding: 12px;
+                            border-radius: 4px;
+
+                            .treo-vertical-navigation-item-icon {
+                                margin: 0;
+                            }
+
+                            .treo-vertical-navigation-item-arrow,
+                            .treo-vertical-navigation-item-badge-content,
+                            .treo-vertical-navigation-item-title-wrapper {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                > treo-vertical-navigation-collapsable-item {
+                    display: none
+                }
+
+                > treo-vertical-navigation-group-item {
+
+                    > .treo-vertical-navigation-item-wrapper {
+                        display: none
+                    }
+                }
+            }
+        }
+
+        /* Aside wrapper */
+        .treo-vertical-navigation-aside-wrapper {
+            left: #{$treo-vertical-navigation-thin-width}px;
+        }
+    }
+}

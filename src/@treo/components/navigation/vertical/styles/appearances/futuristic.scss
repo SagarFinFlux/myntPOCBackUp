@@ -1,0 +1,79 @@
+treo-vertical-navigation {
+
+    /* Futuristic appearance overrides */
+    &.treo-vertical-navigation-appearance-futuristic {
+
+        /* Aside, basic, collapsable, group */
+        treo-vertical-navigation-aside-item,
+        treo-vertical-navigation-basic-item,
+        treo-vertical-navigation-collapsable-item,
+        treo-vertical-navigation-group-item {
+            margin-bottom: 4px;
+
+            > .treo-vertical-navigation-item-wrapper {
+                margin: 0 16px;
+
+                .treo-vertical-navigation-item {
+                    padding-left: 16px;
+                    padding-right: 16px;
+                }
+            }
+        }
+
+        /* Collapsable */
+        treo-vertical-navigation-collapsable-item {
+
+            > .treo-vertical-navigation-item-children {
+
+                .treo-vertical-navigation-item {
+                    padding: 10px 16px;
+                }
+            }
+
+            /* 1st level */
+            .treo-vertical-navigation-item-children {
+
+                .treo-vertical-navigation-item {
+                    padding-left: 56px;
+                }
+
+                /* 2nd level */
+                .treo-vertical-navigation-item-children {
+
+                    .treo-vertical-navigation-item {
+                        padding-left: 72px;
+                    }
+
+                    /* 3rd level */
+                    .treo-vertical-navigation-item-children {
+
+                        .treo-vertical-navigation-item {
+                            padding-left: 88px;
+                        }
+
+                        /* 4th level */
+                        .treo-vertical-navigation-item-children {
+
+                            .treo-vertical-navigation-item {
+                                padding-left: 104px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Navigation items common */
+        .treo-vertical-navigation-item {
+            border-radius: 6px;
+        }
+
+        /* Aside */
+        .treo-vertical-navigation-aside-wrapper {
+
+            > treo-vertical-navigation-aside-item {
+                padding: 8px 0;
+            }
+        }
+    }
+}

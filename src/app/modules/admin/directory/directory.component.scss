@@ -1,0 +1,47 @@
+.directory-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .directory-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .directory-sidenav {
+    padding: 20px 0px;
+    // width: 15%;
+    min-width: 1%;
+  }
+
+  .directory-sidenav-menu-item {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      padding: 15px 30px;
+      box-sizing: border-box;
+      cursor: pointer;
+  }
+
+  .directory-sidenav-menu-item:hover {
+    background: #f9f9f9;
+  }
+
+  .directory-sidenav-menu-item-icon {
+    margin-right: 15px;
+  }
+
+  .menu-toggle {
+    padding: 10px;
+    position: absolute;
+  }
+
+  .menu-toggle-icon {
+    cursor: pointer;
+  }
+
+  .menu-toggle-icon:hover {
+    color: rgb(41, 84, 212);
+  }

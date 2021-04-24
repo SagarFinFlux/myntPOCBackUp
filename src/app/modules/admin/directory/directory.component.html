@@ -1,0 +1,16 @@
+<mat-drawer-container class="directory-container" autosize>
+    <mat-drawer #drawer class="directory-sidenav" mode="side">
+      <div class="directory-sidenav-menu-items" *ngIf="drawer._opened">
+          <div matRipple class="directory-sidenav-menu-item"><mat-icon [svgIcon]="'iconsmind:checked_user'" class="directory-sidenav-menu-item-icon"></mat-icon> Users</div>
+          <div matRipple class="directory-sidenav-menu-item"><mat-icon [svgIcon]="'iconsmind:office'" class="directory-sidenav-menu-item-icon"></mat-icon> Offices</div>
+      </div>
+    </mat-drawer>
+    
+    <div class="menu-toggle">
+      <mat-icon [svgIcon]="drawerIconVal" class="menu-toggle-icon" (click)="menuToggle(drawer)"></mat-icon>
+    </div>
+    <div class="directory-sidenav-content">
+      <h1>Directory Page Contents - Users and Offices in Menu Options</h1>
+    </div>
+  
+  </mat-drawer-container>
