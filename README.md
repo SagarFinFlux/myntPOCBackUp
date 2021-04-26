@@ -25,7 +25,7 @@ app --> core : Auth gaurds, error handlers, interceptors, app.config file, model
         shared : Shared Module that can be used in all components - Angular Material Features.
 ```
 
-### App Folder  
+### Assets Folder  
 ```
 assets --> fonts
            icons
