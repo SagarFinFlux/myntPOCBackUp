@@ -39,7 +39,7 @@ environtments --> environment.prod.ts
 ```
 
 ### Styles Folder
-``           
+```           
 styles --> styles.scss
            tailwind.scss
            venders.scss
