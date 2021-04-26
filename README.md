@@ -47,7 +47,7 @@ styles --> styles.scss
 
 
 
-### To Generate new Components 
+## To Generate new Components 
 Run ```ng generate component path/component-name``` to generate a new component in modules folder. 
 
 
