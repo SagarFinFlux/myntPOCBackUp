@@ -22,7 +22,24 @@ app --> core : Auth gaurds, error handlers, interceptors, app.config file, model
         mock-api : Mock Data that are used to render on API calls in respective components/pages.
         modules : Components/modules that needs to be rendered on navigation.
         shared : Shared Module that can be used in all components - Angular Material Features.
+        
+        
+assets --> fonts
+           icons
+           images
+           
+           
+           
+environtments --> environment.prod.ts
+                  environment.ts
+           
+           
+styles --> styles.scss
+           tailwind.scss
+           venders.scss
 ```
+
+
 
 ### To Generate new Components 
 Run ```ng generate component path/component-name``` to generate a new component in modules folder. 
