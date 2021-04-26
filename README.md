@@ -16,24 +16,30 @@ Use your Brancho Login Credentials for Sign In.
 
 ## Folder Structure
 
+### App Folder
 ```
 app --> core : Auth gaurds, error handlers, interceptors, app.config file, models.
         layout : Commonly uses modules, layout themings.
         mock-api : Mock Data that are used to render on API calls in respective components/pages.
         modules : Components/modules that needs to be rendered on navigation.
         shared : Shared Module that can be used in all components - Angular Material Features.
-        
-        
+```
+
+### App Folder  
+```
 assets --> fonts
            icons
            images
+```           
            
-           
-           
+### Environment Folder
+```
 environtments --> environment.prod.ts
                   environment.ts
-           
-           
+```
+
+### Styles Folder
+``           
 styles --> styles.scss
            tailwind.scss
            venders.scss
